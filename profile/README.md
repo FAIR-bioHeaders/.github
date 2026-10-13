@@ -4,4 +4,7 @@ We belive in building tools and lowering barriers to add important provanance an
 
 We're working on a few data types right now!
 
-So far though, FHR (short for <ins>F</ins>air bio<ins>H</ins>eader <ins>R</ins>eference genome assembly) is our focus. 
+So far though, FHR (short for <ins>F</ins>air bio<ins>H</ins>eader <ins>R</ins>eference genome assembly) is our focus.
+
+Project website: [fhref.org](https://fhref.org/). For general enquiries, email
+[info@fhref.org](mailto:info@fhref.org).
