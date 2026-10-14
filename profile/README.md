@@ -40,7 +40,6 @@ It is an early release; its rule catalogue is under review.
 | [gff3-validator](https://github.com/FAIR-bioHeaders/gff3-validator) | GFF3 syntax, structure, and Sequence Ontology checks through a web interface, CLI, and library. Early release. |
 | [FHR-Nextflow](https://github.com/FAIR-bioHeaders/FHR-Nextflow) | Development prototype of Nextflow DSL2 modules for metadata and annotation workflows; a demo with no published release. |
 | [FHT-Specification](https://github.com/FAIR-bioHeaders/FHT-Specification) | Reference transcriptome metadata specification. Work in progress. |
-| [FHT-File-Converter](https://github.com/FAIR-bioHeaders/FHT-File-Converter) | Companion converter for FHT metadata. |
 | [FHGFF3](https://github.com/FAIR-bioHeaders/FHGFF3) | Draft computable GFF3 schema, based on biodatamodels/gff-schema. |
 | [FHR-Citation](https://github.com/FAIR-bioHeaders/FHR-Citation) | Citation information and BibTeX entries for FHR resources. |
 | [fair-bioheaders.github.io](https://github.com/FAIR-bioHeaders/fair-bioheaders.github.io) | Source for the project website at fhref.org. |
