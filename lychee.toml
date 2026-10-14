@@ -1,0 +1,11 @@
+# Keep concurrency low and retry transient failures before reporting a bad link.
+max_concurrency = 4
+max_retries = 3
+retry_wait_time = 5
+timeout = 30
+
+# A rate limit is inconclusive rather than a broken link. Other errors still fail.
+accept = ["200..=299", "429"]
+
+# Check local files and HTTP(S), without sending email verification requests.
+exclude = ['^mailto:']
