@@ -1,0 +1,15 @@
+# Keep concurrency low and retry transient failures before reporting a bad link.
+max_concurrency = 4
+max_retries = 3
+retry_wait_time = 5
+timeout = 30
+
+# A rate limit is inconclusive rather than a broken link. Other errors still fail.
+accept = ["200..=299", "429"]
+
+# Check local files and HTTP(S), without sending email verification requests.
+exclude = ['^mailto:']
+
+# OUP blocks automated requests after this DOI redirects (HTTP 403).
+# Verify this exact paper's DOI record through Crossref instead.
+remap = ['^https://doi\.org/10\.1093/bib/bbae122$ https://api.crossref.org/works/10.1093/bib/bbae122']
