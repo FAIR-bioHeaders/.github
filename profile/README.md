@@ -13,9 +13,9 @@ GFF3 annotation validation, and workflow integration.
 ## Get started
 
 1. Visit [fhref.org](https://fhref.org/) for project documentation and web tools.
-2. Explore the [FHR specification](https://github.com/FAIR-bioHeaders/FHR-Specification),
-   including its [field reference](https://github.com/FAIR-bioHeaders/FHR-Specification/blob/main/docs/FORMAT.md)
-   and [minimal metadata example](https://github.com/FAIR-bioHeaders/FHR-Specification/blob/main/examples/minimal.fhr.json).
+2. Explore the [FAIR-bioHeaders specifications](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification),
+   including its [field reference](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification/blob/main/docs/FORMAT.md)
+   and [minimal metadata example](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification/blob/main/examples/minimal.fhr.json).
 3. Use [FAIR-bioHeaders Tools](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Tools)
    to convert and validate metadata, attach it to sequence files, and verify file
    checksums. The package is called `fair-bioheaders` and the CLI is `bioheaders`:
@@ -33,7 +33,9 @@ It is an early release; its rule catalogue is under review.
 
 | Project | Purpose |
 | --- | --- |
-| [FHR-Specification](https://github.com/FAIR-bioHeaders/FHR-Specification) | Reference genome metadata schema, examples, and format documentation. |
+| [FAIR-bioHeaders-Specification](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification) | Released specifications for every header type (FHR, FHP, FHGFF3): schemas, shared core, format rules, examples, and conformance suite. Formerly FHR-Specification. |
+| [FHR-Specification](https://github.com/FAIR-bioHeaders/FHR-Specification) | Development of the FHR reference genome header; released work moves to FAIR-bioHeaders-Specification. |
+| [FHP-Specification](https://github.com/FAIR-bioHeaders/FHP-Specification) | Development of the FHP protein FASTA header (draft). |
 | [FAIR-bioHeaders-Tools](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Tools) | Metadata conversion and validation, sequence header tools, and checksum verification. Formerly FHR-File-Converter. |
 | [gff3-validator](https://github.com/FAIR-bioHeaders/gff3-validator) | GFF3 syntax, structure, and Sequence Ontology checks through a web interface, CLI, and library. Early release. |
 | [FHR-Nextflow](https://github.com/FAIR-bioHeaders/FHR-Nextflow) | Development prototype of Nextflow DSL2 modules for metadata and annotation workflows; a demo with no published release. |
