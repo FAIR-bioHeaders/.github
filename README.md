@@ -28,6 +28,10 @@ failed requests with limited concurrency. HTTP 429 responses are accepted as
 inconclusive rate limits; they do not prove that a link works. Other failures
 fail the check. Link results appear in the workflow's job summary.
 
+The FHR paper's DOI is checked through its Crossref metadata record because the
+publisher blocks automated requests. This verifies the DOI record rather than
+access to the publisher's article page; other DOI links are checked normally.
+
 ## Licensing
 
 [![License: MPL-2.0](https://img.shields.io/badge/License-MPL--2.0-blue.svg)](LICENSE)
