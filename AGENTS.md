@@ -48,8 +48,28 @@ for implementing an existing contract. Never rewrite immutable releases, fixed
 schema aliases or existing file-bound headers as incidental cleanup. Header edits
 require checksum recomputation and may affect downstream parent links.
 
-Proposals are not adopted contracts: FAIR-bioHeaders-Specification#139 / draft
-PR #140 (structured vouchers) and profiles still under review in that repository
-(#56) remain proposals until adopted. Implemented subsets do not establish full
-profile or header-family support. The mapping page in fair-bioheaders.github.io#29
-depends on approved profiles.
+Check the adoption decision and released support before implementing a proposal;
+an issue or PR's existence does not establish adoption. Structured vouchers
+(FAIR-bioHeaders-Specification#139/#140) and mapping profiles (#56 in that same
+repository) have their own review history. Implemented subsets do not establish
+full profile or header-family support. The mapping page tracked in
+fair-bioheaders.github.io#29 depends on approved profiles. Recheck these records
+rather than relying on a copied description of their temporary status.
+
+## Documentation workflow and family terminology
+
+`.github/workflows/documentation.yml` runs Markdown lint and Lychee links; weekly
+runs check links and manual dispatch is available. Use the README's commands:
+
+```sh
+npx markdownlint-cli2@0.23.2 '**/*.md'
+lychee --config lychee.toml --no-progress './**/*.md'
+```
+
+Keep exclusions scoped and explain their reasons. A rate-limited/excluded URL is
+not verified by a passing check. Use FAIR BioHeaders/FH* for the family, FHR for
+the genome header, and preserve historical publication/registered citation titles.
+Check status against the shared release registry and actual implementation; the
+profile must not advertise FHT drafts or proposed mappings as delivered support.
+Coordinate family terminology with the website's #32 without changing its public
+URLs or claiming every type has the same supported formats.
