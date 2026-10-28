@@ -38,7 +38,7 @@ It is an early release; its rule catalogue is under review.
 | [FHP-Specification](https://github.com/FAIR-bioHeaders/FHP-Specification) | Development of the FHP protein FASTA header (draft). |
 | [FAIR-bioHeaders-Tools](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Tools) | Metadata conversion and validation, sequence header tools, and checksum verification. Formerly FHR-File-Converter. |
 | [gff3-validator](https://github.com/FAIR-bioHeaders/gff3-validator) | GFF3 syntax, structure, and Sequence Ontology checks through a web interface, CLI, and library. Early release. |
-| [FHR-Nextflow](https://github.com/FAIR-bioHeaders/FHR-Nextflow) | Development prototype of Nextflow DSL2 modules for metadata and annotation workflows; a demo with no published release. |
+| [FAIR-bioHeaders-Nextflow](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Nextflow) | Nextflow DSL2 modules and Dockstore workflow for FHR, FHP and FHGFF3 headers (formerly FHR-Nextflow); first release v0.1.0. |
 | [FHT-Specification](https://github.com/FAIR-bioHeaders/FHT-Specification) | Reference transcriptome metadata specification. Work in progress. |
 | [FHGFF3](https://github.com/FAIR-bioHeaders/FHGFF3) | Draft computable GFF3 schema, based on biodatamodels/gff-schema. |
 | [FHR-Citation](https://github.com/FAIR-bioHeaders/FHR-Citation) | Citation information and BibTeX entries for FHR resources. |
