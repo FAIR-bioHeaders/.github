@@ -4,6 +4,11 @@
 
 The [Round 16 maintainer direction](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification/issues/211#issuecomment-7042896529)
 supersedes the former conditional agent-merge authorization in every repository.
+This entry point governs agents working in this repository. The maintainer
+direction is being ported to each live repository entry point; this organization
+profile file is not inherited automatically by other repositories. It restricts
+agent actions and grants no authority to edit another owner’s guidance.
+
 Agents must never merge PRs, enable auto-merge, enter merge queues, use a merge
 proxy, or push directly to the default branch instead of merging a PR. A human
 performs the merge. Model review grants no agent merge authority; preserve

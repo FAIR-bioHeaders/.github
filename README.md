@@ -16,7 +16,7 @@ merge. Agents fix CI and review findings and provide current-head evidence.
 ## Documentation checks
 
 Pull requests and pushes to `main` run Markdown linting and link checking.
-Links are also checked every Monday and can be checked manually from the
+Links are also checked every Monday (the scheduled run omits Markdown lint) and can be checked manually from the
 **Documentation checks** workflow in GitHub Actions.
 
 Markdown rules are configured in `.markdownlint.json`. Line length is unrestricted
