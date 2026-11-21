@@ -4,10 +4,19 @@ This repository maintains the FAIR bioHeaders GitHub organization profile.
 Edit [profile/README.md](profile/README.md) to update the introduction displayed
 at [github.com/FAIR-bioHeaders](https://github.com/FAIR-bioHeaders).
 
+## Set up and contribute
+
+Clone this repository and use Node.js with npm for the pinned Markdown linter.
+No application server, package build, runtime library or public function API is
+provided here: GitHub renders `profile/README.md` as the organization landing page.
+Read `AGENTS.md` and `LICENSE`, edit on a branch, and open a PR referencing the
+owning issue. Another actual model reviews every PR and a human performs the
+merge. Agents fix CI and review findings and provide current-head evidence.
+
 ## Documentation checks
 
 Pull requests and pushes to `main` run Markdown linting and link checking.
-Links are also checked every Monday and can be checked manually from the
+Links are also checked every Monday (the scheduled run omits Markdown lint) and can be checked manually from the
 **Documentation checks** workflow in GitHub Actions.
 
 Markdown rules are configured in `.markdownlint.json`. Line length is unrestricted

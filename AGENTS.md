@@ -1,42 +1,44 @@
 # Agent instructions
 
-## Independent review and merge authorization (2026-11-18)
+## Model review and human-only merges (2026-11-20)
 
-The maintainer's independent-review rule (2026-11-18) applies only to
-FAIR-bioHeaders repositories and agents operated by David Molik (`molikd`) or
-Adam Wright (`adamjohnwright`). A PR submitted by either maintainer or their
-agents may satisfy the approval gate through an independent **different model**:
-Copilot, or a model operated by David or Adam. The approving model/agent must be
-other than the submitter; an agent must not self-approve its PR, and another
-instance of the same model does not satisfy the different-model requirement.
-Record author/reviewer model provenance when needed to establish independence.
-David and Adam themselves may self-approve their PRs; this exception does not
-apply to their agents.
+The [Round 16 maintainer direction](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification/issues/211#issuecomment-7042896529)
+supersedes the former conditional agent-merge authorization in every repository.
+This entry point governs agents working in this repository. The maintainer
+direction is being ported to each live repository entry point; this organization
+profile file is not inherited automatically by other repositories. It restricts
+agent actions and grants no authority to edit another owner’s guidance.
 
-An eligible agent may merge only after that approval requirement is met, all
-applicable CI checks are green, and its own validation of the current changes
-passes, including changes after review. Recheck the exact head, base branch,
-findings and dependencies immediately before merging. Missing checks are not
-passing checks, and branch protection must not be bypassed. Read every overall
-review and inline finding, reply with its disposition and fix/evidence, resolve
-handled threads, and post an overall response. Merge authorization does not grant
-contract adoption, curator acceptance, release, publication or deployment
-authority; those retain their separate maintainer gates.
+Agents must never merge PRs, enable auto-merge, enter merge queues, use a merge
+proxy, or push directly to the default branch instead of merging a PR. A human
+performs the merge. Model review grants no agent merge authority; preserve
+platform protections and never forge approval or bypass permissions.
 
-Authority: [approval by another, different model](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification/issues/268#issuecomment-6984337685)
-and [human self-approval exception](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification/issues/268#issuecomment-6984418624).
+Every PR receives independent review from another actual model. Prefer another
+model family, for example Qwen or Gemma reviewing Codex work, but family diversity
+is a preference rather than a hard requirement. Another session of the same
+model is not another model. Record actual author/reviewer model identities.
 
-Port source: FAIR-bioHeaders-Specification commit
-`0d0d6b43efdee96bc7548f1f7c65fdafb2a31f32` ([specification PR #269](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Specification/pull/269)).
+Agents monitor and fix CI and actionable overall/inline review findings, make
+fixes in new commits, reply with evidence, resolve handled findings and
+acknowledge clean reviews. Revalidate the current head after changes and hand
+the human the head/base, review, checks, dependencies and remaining risks.
+Missing, failed or NOT_RUN checks are not passes. Adoption, curator acceptance
+and publication retain their separate authority and gates.
+
+Dated earlier plans and immutable historical instruction copies are evidence,
+not operational merge permission. Preserve their provenance; do not rewrite
+published snapshots to port this policy. Current parent guidance governs all
+operations, including work under historical directories.
 
 ## Repository context
 
 This is the FAIR-bioHeaders organization profile repository. `profile/README.md`
 is the public organization landing page. Keep its repository map aligned with
 shared publication in FAIR-bioHeaders-Specification, per-type development in
-FHR/FHP/FHT-Specification and FHGFF3, active tooling in FAIR-bioHeaders-Tools,
+FHR/FHP/FHT/FHGM-Specification and FHGFF3, active tooling in FAIR-bioHeaders-Tools,
 GFF3 feature validation in gff3-validator, and the public website. Do not describe
-retired FHT-File-Converter as an active implementation or advertise drafts as
+renamed FHR-File-Converter as an active implementation or advertise drafts as
 released support. This profile does not adopt schemas or mappings.
 
 Read README, LICENSE, `.markdownlint.json` and `lychee.toml`. For Markdown changes,
@@ -130,5 +132,5 @@ When a PR receives code review (human or model):
 6. Treat optional suggestions as required unless they are genuinely out of
    scope; state why and link a follow-up issue.
 
-Do not push directly to the default branch. PR merges follow the independent
-review authorization above; adoption and publication keep their separate gates.
+Do not push directly to the default branch. Another model reviews every PR;
+humans alone merge. Adoption and publication keep their separate gates.
